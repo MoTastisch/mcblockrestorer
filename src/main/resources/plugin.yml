@@ -1,0 +1,6 @@
+name: Testplugin
+version: '${project.version}'
+main: cf.motastish.testplugin.Main
+api-version: 1.15
+commands:
+  restoreblks:
