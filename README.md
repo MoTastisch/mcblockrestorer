@@ -57,7 +57,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Mail me!: moritz@eistee-cafe.de
+If you are curious contact me:
+
+Mail: moritz@eistee-cafe.de
 
 Project Link: [https://github.com/MoTastisch/mcblockrestorer](https://github.com/MoTastisch/mcblockrestorer)
 
