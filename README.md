@@ -13,10 +13,10 @@
   <p align="center">
     Paper 1.19 | Proof of concept!
     <br />
-    <a href="https://papermc.io/"><strong>Download server-software »</strong></a>
+    <a href="https://github.com/MoTastisch/mcblockrestorer/releases"><strong>Download »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/MoTastisch/mcblockrestorer/releases">Download</a>
+    <a href="https://papermc.io/">Download Paper-Server</a>
   </p>
 </div>
 
