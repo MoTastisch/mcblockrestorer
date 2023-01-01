@@ -11,8 +11,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/MoTastisch">
+    <img src="https://avatars.githubusercontent.com/u/67092385?s=400&u=6fb069506684e2292ea023c1c9aba3cb049acae7&v=4" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Best-README-Template</h3>
