@@ -1,17 +1,12 @@
 package cf.motastish.testplugin;
 
-import org.bukkit.Bukkit;
 import org.bukkit.World;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.bukkit.plugin.Plugin;
-
-import static org.bukkit.Bukkit.getWorld;
 
 public class command implements CommandExecutor{
-    private Plugin plugin = Bukkit.getServer().getPluginManager().getPlugin("Testplugin");
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args){
         Player p = (Player) sender;

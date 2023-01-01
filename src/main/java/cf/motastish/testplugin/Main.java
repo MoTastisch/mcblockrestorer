@@ -1,6 +1,5 @@
 package cf.motastish.testplugin;
 
-import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitRunnable;
 
@@ -22,7 +21,6 @@ public final class Main extends JavaPlugin {
     }
 
     public static Integer dcly = 0;
-    public static Integer dcly2 = 0;
 
     void executeEveryMinute(){
         new BukkitRunnable() {

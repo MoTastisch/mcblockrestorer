@@ -1,24 +1,17 @@
 package cf.motastish.testplugin;
 
-import jdk.javadoc.internal.doclets.formats.html.Table;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
-import org.bukkit.World;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
-import org.bukkit.plugin.Plugin;
 
 import java.util.HashMap;
-import java.util.Hashtable;
 import java.util.Map;
-import java.util.UUID;
-
-import static org.bukkit.Bukkit.getWorld;
 
 public class listener implements Listener {
 
@@ -29,7 +22,6 @@ public class listener implements Listener {
     public static Map<Integer, Integer> dclym = new HashMap<>();
 
     private Integer idcounter = 0;
-    private Plugin plugin = Bukkit.getServer().getPluginManager().getPlugin("Testplugin");
 
     @EventHandler
     public void event1(AsyncPlayerChatEvent e){
@@ -41,8 +33,8 @@ public class listener implements Listener {
         }
     }
 
+    @EventHandler
     public void event2(AsyncPlayerChatEvent e){
-        Player p = e.getPlayer();
         if(e.getMessage().equalsIgnoreCase("#MoTastish")){
             e.setCancelled(true);
             Bukkit.broadcastMessage("§c#MoTastish");
@@ -52,12 +44,10 @@ public class listener implements Listener {
     @EventHandler
     public void event3(BlockBreakEvent e){
         Player p = e.getPlayer();
-        UUID id = p.getUniqueId();
         Block b = e.getBlock();
         Location l = b.getLocation();
         Material m = b.getBlockData().getMaterial();
-        World world = l.getWorld();
-        Integer lkey = null;
+        Integer lkey;
         if(idd.get(p)==null){
             idcounter = idcounter+1;
             idd.put(p, idcounter);
